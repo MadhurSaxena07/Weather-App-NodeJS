@@ -1,4 +1,4 @@
-console.log('The JS script is loaded successfully.')
+
 
 // fetch('http://puzzle.mead.io/puzzle').then((response) => {
 //     response.json().then((data) => {
@@ -24,6 +24,7 @@ weatherForm.addEventListener('submit', (e) =>{
     const url = 'http://localhost:3000/weather?address='+location.toString()
 
     message1.textContent = 'Loading data'
+    message2.textContent = ''
 
     fetch(url).then((response) => {
         response.json().then((data) => {
